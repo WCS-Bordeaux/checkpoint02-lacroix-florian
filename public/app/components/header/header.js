@@ -16,6 +16,10 @@ function Header() {
         {
             name: 'users',
             displayName: 'Users list'
+        },
+        {
+            name: 'questions',
+            displayName: 'Questionnaire'
         }
     ]
 }

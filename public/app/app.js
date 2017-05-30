@@ -17,6 +17,11 @@ angular.module("wildNoteApp", [
                     name: "users",
                     url: "/users",
                     component: "users"
+                },
+                {
+                    name: "questions",
+                    url: "/questionnaire",
+                    component: "questions"
                 }
             ];
             $urlRouterProvider.otherwise("/zergling");
