@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('wildNoteApp')
 
@@ -8,6 +8,5 @@ angular.module('wildNoteApp')
     });
 
 function Home() {
-    console.log('plouf');
 }
 

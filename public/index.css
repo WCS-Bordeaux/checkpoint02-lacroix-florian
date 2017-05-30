@@ -16,3 +16,20 @@
   bottom: 25px;
   right: 25px;
 }
+
+label, p {
+    display: inline-block;
+    margin: 10px;
+}
+
+.user-block {
+    padding: 20px;
+    background: #d4c8d6;
+}
+.detail-user {
+    height: 300px;
+}
+.notes-wrapper {
+    height: 280px;
+    overflow-y: scroll;
+}

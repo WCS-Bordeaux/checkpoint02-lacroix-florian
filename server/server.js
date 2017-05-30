@@ -24,3 +24,19 @@ app.use(express.static('../public'));
 app.get('/', function (request, response, next) {
     response.send('index.html');
 });
+
+// return users and resp. notes
+app.get('/all-users', function(req, res, next) {
+    let users = bddUsers.users;
+    bddNotes.notes.forEach( function(v) {
+
+        users.forEach( function(u,k) {
+            userNotes = bddNotes.notes.filter( function(v,i){
+                return v.userId === u._id;
+            });
+            u.notes = userNotes;
+            users[k] = u;
+        })
+    });
+    res.send(JSON.stringify(users));
+});

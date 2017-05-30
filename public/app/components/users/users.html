@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <h4>Users</h4>
+        <div class="divider"></div>
+        <div class="section user-block" ng-repeat="u in $ctrl.users">
+            <div class="row detail-user">
+                <div class="col s6">
+                    ID: <small>{{ u._id }}</small><br>
+                    <label for="name">Name</label>
+                    <p id="name">{{ u.name.last }}</p><br>
+                    <label for="firstname">Firstname</label>
+                    <p id="firstname">{{ u.name.first }}</p><br>
+                    <label for="company">Company</label>
+                    <p id="company">{{ u.company }}</p><br>
+                    <label for="email"><i class="material-icons">email</i></label>
+                    <p id="email">{{ u.email }}</p><br>
+                    <label for="phone"><i class="material-icons">phone</i></label>
+                    <p id="phone">{{ u.phone }}</p><br>
+                </div>
+                <div class="col s6 notes-wrapper">
+                    <label>Notes</label>
+                    <div class="section" ng-repeat="n in u.notes">
+                        <p>{{ n.content }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="divider"></div>
+    </div>
+
+</div>

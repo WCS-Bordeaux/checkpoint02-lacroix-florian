@@ -12,6 +12,11 @@ angular.module("wildNoteApp", [
                     name: "home",
                     url: "/",
                     component: "home"
+                },
+                {
+                    name: "users",
+                    url: "/users",
+                    component: "users"
                 }
             ];
             $urlRouterProvider.otherwise("/zergling");

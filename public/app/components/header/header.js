@@ -12,6 +12,10 @@ function Header() {
         {
             name: 'home',
             displayName: 'Home'
+        },
+        {
+            name: 'users',
+            displayName: 'Users list'
         }
     ]
 }
